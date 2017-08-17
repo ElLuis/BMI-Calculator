@@ -45,8 +45,8 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.1529F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.8471F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.1529F));
             this.tableLayoutPanel1.Controls.Add(this.imperialUnitsButton, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.myHeightLabel, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.myHeightTextBox, 0, 2);
@@ -54,9 +54,9 @@
             this.tableLayoutPanel1.Controls.Add(this.metricUnitsButton, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.myWeightTextBox, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.calculateBMIButton, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.bmiScaleTextBox, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.BMITextBox, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.bmiScaleLable, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.bmiScaleTextBox, 1, 5);
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Bookman Old Style", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 41);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -74,6 +74,7 @@
             // imperialUnitsButton
             // 
             this.imperialUnitsButton.AutoSize = true;
+            this.imperialUnitsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.imperialUnitsButton.Location = new System.Drawing.Point(3, 3);
             this.imperialUnitsButton.Name = "imperialUnitsButton";
             this.imperialUnitsButton.Size = new System.Drawing.Size(142, 36);
@@ -112,6 +113,7 @@
             // metricUnitsButton
             // 
             this.metricUnitsButton.AutoSize = true;
+            this.metricUnitsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.metricUnitsButton.Location = new System.Drawing.Point(166, 3);
             this.metricUnitsButton.Name = "metricUnitsButton";
             this.metricUnitsButton.Size = new System.Drawing.Size(116, 36);
@@ -145,11 +147,12 @@
             // 
             this.bmiScaleTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.bmiScaleTextBox.Enabled = false;
+            this.bmiScaleTextBox.Font = new System.Drawing.Font("Bookman Old Style", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bmiScaleTextBox.ForeColor = System.Drawing.Color.White;
             this.bmiScaleTextBox.Location = new System.Drawing.Point(166, 267);
             this.bmiScaleTextBox.Multiline = true;
             this.bmiScaleTextBox.Name = "bmiScaleTextBox";
-            this.bmiScaleTextBox.Size = new System.Drawing.Size(100, 35);
+            this.bmiScaleTextBox.Size = new System.Drawing.Size(158, 29);
             this.bmiScaleTextBox.TabIndex = 6;
             this.bmiScaleTextBox.TextChanged += new System.EventHandler(this.bmiScaleTextBox_TextChanged);
             // 
@@ -161,7 +164,7 @@
             this.BMITextBox.Location = new System.Drawing.Point(166, 182);
             this.BMITextBox.Multiline = true;
             this.BMITextBox.Name = "BMITextBox";
-            this.BMITextBox.Size = new System.Drawing.Size(100, 37);
+            this.BMITextBox.Size = new System.Drawing.Size(158, 37);
             this.BMITextBox.TabIndex = 5;
             this.BMITextBox.TextChanged += new System.EventHandler(this.BMITextBox_TextChanged);
             // 

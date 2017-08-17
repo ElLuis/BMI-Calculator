@@ -6,6 +6,11 @@ using System.Windows.Forms;
 
 namespace BMI_Calculator
 {
+    //Luis Sanchez - 300796405  
+    //COMP125
+    //BMI Calculator
+    //Assignment 5
+    //8/16/2017
     static class Program
     {
         /// <summary>
