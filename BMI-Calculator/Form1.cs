@@ -63,14 +63,37 @@ namespace BMI_Calculator
 
         }
 
+        private void resetButton_Click(object sender, EventArgs e)
+        {
+            myHeightTextBox.Text = String.Empty;
+            myWeightTextBox.Text = String.Empty;
+            bmiScaleTextBox.Text = String.Empty;
+            BMITextBox.Text = String.Empty;
+            calculateBMIButton.Enabled = true;
+            calculateBMIButton.Text = "Calculate BMI";
+        }
+
         private void myHeightTextBox_TextChanged(object sender, EventArgs e) //height
         {
-      
+            double i = 0;
+            bool valid = double.TryParse(myHeightTextBox.Text, out i); //i now = 108  
+            if (valid == false)
+            {
+                calculateBMIButton.Enabled = false;
+                calculateBMIButton.Text = "Enter height";
+            }
         }
 
         private void myWeightTextBox_TextChanged(object sender, EventArgs e) //weight
         {
-
+            double i = 0;
+            bool valid = double.TryParse(myWeightTextBox.Text, out i); //i now = 108  
+            if (valid == false)
+            {
+                
+                calculateBMIButton.Enabled = false;
+                calculateBMIButton.Text = "Enter weight";
+            }
         }
 
         private void calculateBMIButton_Click(object sender, EventArgs e) //calculate
